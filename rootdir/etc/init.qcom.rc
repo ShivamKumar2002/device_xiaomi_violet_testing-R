@@ -31,7 +31,7 @@ import /vendor/etc/init/hw/init.target.rc
 
 on early-init
     # Disable EAS
-    write /sys/kernel/debug/sched_features NO_ENERGY_AWARE
+    write /proc/sys/kernel/sched_energy_aware 0
 
   # Change ownership of hw_recovery related nodes
     chown system graphics /sys/kernel/debug/dri/0/debug/dump
@@ -441,7 +441,7 @@ on property:persist.vendor.ssr.enable_ramdumps=1
 
 on property:sys.boot_completed=1
     # Enable EAS
-    write /sys/kernel/debug/sched_features ENERGY_AWARE
+    write /proc/sys/kernel/sched_energy_aware 0
 
     write /dev/kmsg "Boot completed "
     #Reinit lmkd to reconfigure lmkd properties
@@ -913,7 +913,7 @@ on charger
     setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
     # Enable EAS
-    write /sys/kernel/debug/sched_features ENERGY_AWARE
+    write /proc/sys/kernel/sched_energy_aware 0
 
     # Enable powersaving
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
