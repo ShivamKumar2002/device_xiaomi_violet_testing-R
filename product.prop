@@ -20,10 +20,6 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.line
 
 # LMKD
 ro.config.low_ram=false
-ro.lmk.kill_heaviest_task=true
-ro.lmk.kill_timeout_ms=100
-ro.lmk.use_minfree_levels=true
-ro.lmk.log_stats=true
 
 # HwUi
 hwui.disable_vsync=true
