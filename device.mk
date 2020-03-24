@@ -333,7 +333,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.sm6150-libperfmgr \
+    android.hardware.power-service.sm6150-libperfmgr \
     powerhint.json
 
 PRODUCT_COPY_FILES += \
