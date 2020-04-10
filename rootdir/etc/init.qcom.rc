@@ -67,7 +67,7 @@ on late-fs
     # Start services for bootanim
     start surfaceflinger
     start bootanim
-    start vendor.hwcomposer-2-3
+    start vendor.hwcomposer-2-4
     start vendor.configstore-hal
     start vendor.qti.hardware.display.allocator
 
@@ -971,3 +971,13 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
+
+service vendor.hwcomposer-2-4 /vendor/bin/hw/android.hardware.graphics.composer@2.4-service
+    override
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+    socket pps stream 0660 system system
+    writepid /dev/cpuset/system-background/tasks
