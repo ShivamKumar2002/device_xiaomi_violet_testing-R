@@ -7,5 +7,9 @@ type vendor_fp_prop, property_type;
 # Mlipay
 type ifaa_prop, property_type;
 
+# Thermal
+type thermal_normal_prop, property_type;
+type vendor_thermal_prop, property_type;
+
 # Dirac
 type dirac_prop, property_type;
