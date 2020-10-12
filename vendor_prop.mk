@@ -65,7 +65,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_decimation=1 \
     vendor.display.disable_hw_recovery_dump=1 \
     vendor.display.enable_default_color_mode=0 \
-    vendor.gralloc.disable_ubwc=0
+    vendor.gralloc.disable_ubwc=0 \
+    ro.sf.lcd_density=440
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
