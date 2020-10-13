@@ -193,7 +193,8 @@ BOARD_SEPOLICY_M4DEFS += \
     sysfs_scsi_host=vendor_sysfs_scsi_host \
     sysfs_ssr=vendor_sysfs_ssr \
     wcnss_service_exec=vendor_wcnss_service_exec \
-    wifi_vendor_data_file=vendor_wifi_vendor_data_file
+    wifi_vendor_data_file=vendor_wifi_vendor_data_file \
+    thermal-engine=vendor_thermal-engine
 
 SELINUX_IGNORE_NEVERALLOWS := true
 
