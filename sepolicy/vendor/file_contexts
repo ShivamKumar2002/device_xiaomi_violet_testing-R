@@ -29,3 +29,5 @@
 # FPS Info
 /sys/class/drm/sde-crtc-0/measured_fps               u:object_r:sysfs_fps:s0
 
+# Camera
+/mnt/vendor/persist/camera(/.*)? u:object_r:camera_persist_file:s0
