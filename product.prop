@@ -69,8 +69,8 @@ ro.netflix.bsp_rev=Q6150-17263-1
 sys.fflag.override.settings_seamless_transfer=true
 
 # Fingerprint
-ro.vendor.build.fingerprint=google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys
-ro.build.fingerprint=google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys
+ro.vendor.build.fingerprint=google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys
+ro.build.fingerprint=google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys
 
 # Charger
 ro.charger.enable_suspend=true
