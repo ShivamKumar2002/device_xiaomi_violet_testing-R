@@ -501,7 +501,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.secure=0 \
     ro.debuggable=1
-
-# DumpState
-PRODUCT_PACKAGES += \
-    android.hardware.dumpstate@1.1-service-violet
