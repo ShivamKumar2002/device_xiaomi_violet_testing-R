@@ -32,4 +32,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PALLADIUM_BUILDTYPE := OFFICIAL
 
+#PALLADIUM-PROPS
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.palladiumdevice.maintainer=Shivam \
+    ro.palladiumdevice.cpu=sm6150 \
+    ro.palladiumdevice.display=6.3 \
+    ro.palladiumdevice.displaytype=FULLHD+
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
