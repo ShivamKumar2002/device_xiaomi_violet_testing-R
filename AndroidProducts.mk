@@ -5,4 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/corvus_violet.mk
+    $(LOCAL_DIR)/palladium_violet.mk
+
+
+COMMON_LUNCH_CHOICES := \
+    palladium_violet-eng \
+    palladium_violet-userdebug \
+    palladium_violet-user
